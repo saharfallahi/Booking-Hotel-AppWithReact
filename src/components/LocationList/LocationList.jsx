@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 
 function LocationList() {
@@ -10,6 +11,10 @@ function LocationList() {
       <div className="locationList">
       {data.map((item) => {
         return (
+          <Link
+              key={item.id}
+              to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
+            >
           <div className="locationItem" key={item.id}>
             <img src={item.xl_picture_url} alt={item.name} />
             <div className="locationItemDesc">
@@ -21,6 +26,7 @@ function LocationList() {
               </p>
             </div>
           </div>
+          </Link>
         );
       })}
       </div>

@@ -1,12 +1,19 @@
 import { useRef, useState } from "react";
 import {
   HiCalendar,
+  HiLogin,
   HiLogout,
   HiMinus,
   HiPlus,
   HiSearch,
 } from "react-icons/hi";
-import { MdLocationOn } from "react-icons/md";
+import {
+  MdHotel,
+  MdHotelClass,
+  MdLocationOn,
+  MdRoom,
+  MdRoomService,
+} from "react-icons/md";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
@@ -19,6 +26,7 @@ import {
 } from "react-router-dom";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import { useAuth } from "../context/AuthProvider";
+import { RiHotelBedFill } from "react-icons/ri";
 
 function Header() {
   const navigate = useNavigate();
@@ -67,7 +75,10 @@ function Header() {
 
   return (
     <div className="header">
-      <NavLink to="/bookmarks">Bookmarks</NavLink>
+      <div className="headerLinks">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/bookmarks">Bookmarks</NavLink>
+      </div>
       <div className="headerSearch">
         <div className="headerSearchItem">
           <MdLocationOn className="headerIcon locationIcon" />
@@ -97,7 +108,7 @@ function Header() {
             )}`}
           </div>
           {openDate && (
-            <div ref={dateRef}>
+            <div ref={dateRef} >
               <DateRange
                 onChange={(item) => setDate([item.selection])}
                 ranges={date}
@@ -110,6 +121,8 @@ function Header() {
           <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
+          <RiHotelBedFill className="headerIcon roomIcon" />
+
           <div id="optionDropDown" onClick={() => setOpenOptions(!openOptions)}>
             {options.adult} adult &bull; {options.children} children &bull;{" "}
             {options.room} room
@@ -125,6 +138,7 @@ function Header() {
         </div>
         <div className="headerSearchItem">
           <button className="headerSearchBtn" onClick={handleSearch}>
+            <span className="searchWord">search</span>
             <HiSearch className="headerIcon" />
           </button>
         </div>
@@ -192,18 +206,20 @@ function User() {
   const navigate = useNavigate();
   const handleLogout = () => {
     logout();
-    navigate("/")
+    navigate("/");
   };
 
   return (
-    <div>
+    <div className="userLink">
       {isAuthenticated ? (
         <div>
-          <span>{user.name}</span>
-          <button>
-            &nbsp;
-            <HiLogout onClick={handleLogout} className="icon" />
-          </button>
+          <span className="userLogout">
+            {user.name}
+            <button>
+              
+              <HiLogout onClick={handleLogout} className="icon logout" />
+            </button>
+          </span>
         </div>
       ) : (
         <NavLink to="/login">login</NavLink>

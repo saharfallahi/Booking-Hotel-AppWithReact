@@ -58,9 +58,6 @@ function bookmarkReducer(state, action) {
 }
 
 function BookmarkListProvider({ children }) {
-  // const [currentBookmark, setCurrentBookmark] = useState({});
-  // const [bookmarks, setBookmarks] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
 
   const [{ bookmarks, isLoading, currentBookmark }, dispatch] = useReducer(
     bookmarkReducer,

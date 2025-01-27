@@ -108,7 +108,7 @@ function AddNewBookmark() {
           >
             &larr; Back
           </button>
-          <button onClick={() => {}} className="btn btn--primary">
+          <button className="btn btn--primary">
             Add
           </button>
         </div>

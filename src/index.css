@@ -43,3 +43,24 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+h2{
+  font-size: 1.2rem;
+}
+p{
+  font-size: 0.8rem;
+}
+div{
+  font-size: 0.9rem;
+}
+@media screen and (min-width:1024px){
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  div{
+    /* font-size: 1rem; */
+  }
+}

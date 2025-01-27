@@ -2,16 +2,25 @@
 
 .header {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
+.headerLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.userLink {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 .headerSearch {
   display: flex;
   width: 100%;
-  max-width: 900px;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   border: 1px solid #ebe9e9;
   border-radius: 1.5rem;
@@ -20,20 +29,14 @@
 
 .headerSearchInput {
   padding: 0.7rem 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .headerSearchItem {
   display: flex;
   align-items: center;
   position: relative;
 }
-.headerSearchItem .seperator {
-  display: inline-block;
-  width: 1px;
-  height: 30px;
-  background-color: var(--text-400);
-  margin: 0 1rem;
-}
+
 .textField {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
@@ -42,6 +45,13 @@
   width: 1.5rem;
   height: 1.5rem;
   display: inline-block;
+}
+.headerSearchBtn .headerIcon {
+  display: none;
+}
+.searchWord {
+  font-size: 1rem;
+  display: block;
 }
 .locationIcon {
   color: var(--rose-500);
@@ -56,7 +66,7 @@
   position: absolute;
   top: 2rem;
   width: 220px;
-  z-index: 1000;
+  z-index: 1002;
 }
 .guestOptionItem {
   display: flex;
@@ -91,11 +101,18 @@
 
 .date {
   position: absolute;
-  top: 50px;
-  left: -5rem;
+  top: 2rem;
+  left: 0;
+  max-width: 270px;
   z-index: 1002;
+  border: 1px solid var(--text-100);
+  box-shadow: 0 0 10px #efefef;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-
+.rdrMonth{
+  max-width: 270px;
+}
 .dateIcon {
   color: var(--primary-700);
 }
@@ -103,16 +120,18 @@
 .dateDropDown {
   margin-left: 0.5rem;
   font-size: 0.8rem;
+  
 }
 
 .headerSearchBtn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary-600);
   color: #fff;
   padding: 0.6rem;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 
 /*  location list */
@@ -166,7 +185,12 @@
   justify-content: space-between;
   gap: 1rem;
   max-width: 1280px;
-  margin: 2rem auto;
+  margin: 0rem auto;
+}
+
+.roomIcon {
+  color: var(--primary-700);
+  margin-right: 0.5rem;
 }
 
 .roomDetail h2 {
@@ -204,7 +228,7 @@
   z-index: 1000;
 }
 .map {
-  height: 100%; 
+  height: 100%;
 }
 
 .searchList {
@@ -245,18 +269,22 @@
 
 /* app layout */
 .appLayout {
-  margin-top: 1rem;
+  max-width: 1400px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: calc(100vh - 130px);
-  /* background-color: var(--text-100); */
-  align-items: stretch;
+ 
 }
 
 .sidebar {
-  width: 35%;
+  height: calc(50vh - 130px);
+  width: 100%;
   overflow-y: scroll;
   padding-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .searchItem.current-hotel {
@@ -264,11 +292,6 @@
   border-radius: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .sidebar {
-    width: 50%;
-  }
-}
 
 /* bookmark page */
 .bookmarkList {
@@ -283,7 +306,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.bookmarkSingle h2{
+.bookmarkSingle h2 {
   margin: 1rem 0;
 }
 .bookmarkList .bookmarkItem.current-bookmark {
@@ -371,5 +394,97 @@ a.active {
   width: 1.1rem;
   height: 1.1rem;
 }
+.userLogout{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
+
+/* --------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .headerSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    border: 1px solid #ebe9e9;
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+  .headerSearchItem .seperator {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: var(--text-400);
+    margin: 0 1rem;
+  }
+  .headerIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+  }
+  .searchWord {
+    display: none;
+  }
+  .headerSearchBtn .headerIcon {
+    display: inline-block;
+  }
+  .headerSearchBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-600);
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
+  .headerLinks {
+    width: auto;
+    display: flex;
+
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .userLink {
+    width: auto;
+  }
+  .headerSearchInput {
+    font-size: 1rem;
+  }
+  .appLayout {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .sidebar {
+    width: 50%;
+    height: calc(100vh - 130px);
+    margin-bottom: 0;
+  }
+  .room {
+    margin: 2rem auto;
+  }
+
+  .date {
+    left: -5rem;
+    max-width: none;
+  }
+  .rdrMonth{
+    max-width: none;
+  }
+  
+}
 

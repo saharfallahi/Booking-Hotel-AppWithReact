@@ -3,7 +3,7 @@ import { useAuth } from "../context/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [email, setEmail] = useState("user1@gmail.com");
+  const [email, setEmail] = useState("sahar@gmail.com");
   const [password, setPassword] = useState("1234");
   const navigate = useNavigate();
   const { user, login, isAuthenticated } = useAuth();
@@ -12,7 +12,6 @@ function Login() {
     e.preventDefault();
     if (email && password) login(email, password);
   };
-  console.log(user);
 
   useEffect(() => {
     if (isAuthenticated) navigate("/",{replace:true});

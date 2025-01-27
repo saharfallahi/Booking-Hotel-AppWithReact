@@ -1334,15 +1334,6 @@
       "id": 2
     },
     {
-      "cityName": "Fasham",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.8356283888737",
-      "longitude": "51.3552474975586",
-      "host_location": "FashamIran (Islamic Republic of)",
-      "id": 6
-    },
-    {
       "cityName": "Tehran",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
@@ -1350,6 +1341,60 @@
       "longitude": "51.376876831054695",
       "host_location": "TehranIran (Islamic Republic of)",
       "id": 7
+    },
+    {
+      "cityName": "Zarrin Shahr",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "32.47751021399313",
+      "longitude": "51.39404296875001",
+      "host_location": "Zarrin ShahrIran (Islamic Republic of)",
+      "id": 9
+    },
+    {
+      "cityName": "Gemeente Gemert-Bakel",
+      "country": "Netherlands (Kingdom of the)",
+      "countryCode": "NL",
+      "latitude": "51.56714712920094",
+      "longitude": "5.752716064453126",
+      "host_location": "Gemeente Gemert-BakelNetherlands (Kingdom of the)",
+      "id": 10
+    },
+    {
+      "cityName": "Yazd",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "31.854413564327267",
+      "longitude": "54.33837890625001",
+      "host_location": "YazdIran (Islamic Republic of)",
+      "id": 11
+    },
+    {
+      "cityName": "Ahvaz",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "31.332891598919506",
+      "longitude": "48.69415283203126",
+      "host_location": "AhvazIran (Islamic Republic of)",
+      "id": 12
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "35.68925210616528",
+      "longitude": "51.3907814025879",
+      "host_location": "TehranIran (Islamic Republic of)",
+      "id": 13
+    },
+    {
+      "cityName": "Tehran",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "35.80444911191491",
+      "longitude": "51.38195933321791",
+      "host_location": "TehranIran (Islamic Republic of)",
+      "id": 14
     }
   ]
 }
