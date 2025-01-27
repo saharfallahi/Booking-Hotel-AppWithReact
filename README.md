@@ -11,7 +11,7 @@ To implement the backend of this project, JSON Server is used, and hotel informa
 ## Screenshots
 ![Screenshot (35)](https://github.com/user-attachments/assets/6e463e8f-23e2-4ff4-80df-51721b6525b8)
 
-![Screenshot (36)](https://github.com/user-attachments/assets/e5f4973e-d66b-4bae-bfe5-deb3f775d31a)
+![Screenshot (38)](https://github.com/user-attachments/assets/6ce0d56d-d236-4a59-a4b3-8b6032cf04c0)
 
 
 ## Authors
