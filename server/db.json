@@ -1325,60 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Isfahan",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "32.63185780462339",
-      "longitude": "51.70862803844887",
-      "host_location": "IsfahanIran (Islamic Republic of)",
-      "id": 2
-    },
-    {
-      "cityName": "Tehran",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.734390322042174",
-      "longitude": "51.376876831054695",
-      "host_location": "TehranIran (Islamic Republic of)",
-      "id": 7
-    },
-    {
-      "cityName": "Zarrin Shahr",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "32.47751021399313",
-      "longitude": "51.39404296875001",
-      "host_location": "Zarrin ShahrIran (Islamic Republic of)",
-      "id": 9
-    },
-    {
-      "cityName": "Gemeente Gemert-Bakel",
-      "country": "Netherlands (Kingdom of the)",
-      "countryCode": "NL",
-      "latitude": "51.56714712920094",
-      "longitude": "5.752716064453126",
-      "host_location": "Gemeente Gemert-BakelNetherlands (Kingdom of the)",
-      "id": 10
-    },
-    {
-      "cityName": "Yazd",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "31.854413564327267",
-      "longitude": "54.33837890625001",
-      "host_location": "YazdIran (Islamic Republic of)",
-      "id": 11
-    },
-    {
-      "cityName": "Ahvaz",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "31.332891598919506",
-      "longitude": "48.69415283203126",
-      "host_location": "AhvazIran (Islamic Republic of)",
-      "id": 12
-    },
-    {
       "cityName": "Tehran",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
@@ -1388,13 +1334,31 @@
       "id": 13
     },
     {
-      "cityName": "Tehran",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.80444911191491",
-      "longitude": "51.38195933321791",
-      "host_location": "TehranIran (Islamic Republic of)",
-      "id": 14
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.50480919663775",
+      "longitude": "-0.12007713317871095",
+      "host_location": "LondonUnited Kingdom of Great Britain and Northern Ireland (the)",
+      "id": 15
+    },
+    {
+      "cityName": "Oxford",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "countryCode": "GB",
+      "latitude": "51.74127393889718",
+      "longitude": "-1.2442016601562502",
+      "host_location": "OxfordUnited Kingdom of Great Britain and Northern Ireland (the)",
+      "id": 16
+    },
+    {
+      "cityName": "Lajas",
+      "country": "Cuba",
+      "countryCode": "CU",
+      "latitude": "22.546013289677713",
+      "longitude": "-80.28945922851562",
+      "host_location": "LajasCuba",
+      "id": 18
     }
   ]
 }
