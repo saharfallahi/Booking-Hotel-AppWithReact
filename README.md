@@ -33,7 +33,7 @@ https://booking-hotel-app-alpha.vercel.app/
 To deploy this project run
 
 ```bash
-  npm run dev
+  npm run start
 ```
 
 to deploy server
@@ -41,6 +41,7 @@ to deploy server
 ```bash
   npm run server
 ```
+
 ## Run Locally
 
 Clone the project
