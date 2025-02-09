@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 
 function LocationList() {
-  const { data, isLoading } = useFetch("http://localhost:5000/hotels");
+  const { data, isLoading } = useFetch("https://fern-harsh-texture.glitch.me/hotels");
 
   if (isLoading) <p> isloading</p>;
   return (
