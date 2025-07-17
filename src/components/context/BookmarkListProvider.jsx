@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const BookmarkContext = createContext();
-const BASE_URL = "https://fern-harsh-texture.glitch.me";
+const BASE_URL = "https://bookinghotelapp-jsonserver.onrender.com";
 
 const initialState = {
   bookmarks: [],

@@ -5,7 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 const HotelContext = createContext();
-const BASE_URL = "https://fern-harsh-texture.glitch.me";
+const BASE_URL = "https://bookinghotelapp-jsonserver.onrender.com";
 
 function HotelsProvider({ children }) {
   const [currentHotel, setCurrentHotel] = useState({});
